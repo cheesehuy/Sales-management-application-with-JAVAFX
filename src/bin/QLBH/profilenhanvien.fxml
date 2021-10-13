@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="435.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="QLBH.ProfilesNhanvienController">
+   <children>
+      <Label layoutX="28.0" layoutY="68.0" prefHeight="35.0" prefWidth="139.0" text="Họ và tên : ">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="149.0" layoutY="23.0" prefHeight="33.0" prefWidth="293.0" text="THÔNG TIN NHÂN VIÊN">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Text fx:id="hovatennv" layoutX="167.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="154.13671875">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Label layoutX="28.0" layoutY="116.0" prefHeight="35.0" prefWidth="129.0" text="Năm sinh : ">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="161.0" text="Chức vụ :">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="199.0" text="Giới tính :">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="240.0" text="SĐT :">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="278.0" text="CMND :">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="322.0" text="Địa chỉ :">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Text fx:id="chucvunhanvien" layoutX="167.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="184.99999717622995">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="gioitinhnhanvien" layoutX="167.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="164.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="sdtnhanvien" layoutX="167.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="185.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="cmndnhanvien" layoutX="167.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="184.99999717622995">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="diachinhanvien" layoutX="167.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="408.00000147521496">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="imagenhanvien" fitHeight="166.0" fitWidth="174.0" layoutX="408.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="442.0" layoutY="260.0" text="Ảnh nhân viên">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="ngaysinhnhanvien" editable="false" layoutX="167.0" layoutY="118.0" prefHeight="32.0" prefWidth="200.0" />
+      <Label layoutX="31.0" layoutY="374.0" prefHeight="32.0" prefWidth="147.0" text="Ngày vào làm :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="ngayvaolam" editable="false" layoutX="167.0" layoutY="373.0" prefHeight="32.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

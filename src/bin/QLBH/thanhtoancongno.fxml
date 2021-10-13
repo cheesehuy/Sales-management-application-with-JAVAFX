@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="QLBH.ThanhtoanCNcontroller">
+   <children>
+      <AnchorPane layoutY="-14.0" prefHeight="373.0" prefWidth="582.0">
+         <children>
+            <Label layoutX="51.0" layoutY="92.0" text="Nợ Hiện Tại            :" />
+            <Label layoutX="146.0" layoutY="212.0" text="Số Nợ Còn Lại">
+               <font>
+                  <Font size="23.0" />
+               </font></Label>
+            <Label layoutX="317.0" layoutY="133.0" text="Phương Thức" />
+            <Label layoutX="51.0" layoutY="133.0" text="Thanh Toán" />
+            <Label layoutX="316.0" layoutY="92.0" text="Ngày             :" />
+            <TextField fx:id="tfthanhtoan" layoutX="130.0" layoutY="129.0" />
+            <Button fx:id="bttaophieu" layoutX="164.0" layoutY="307.0" mnemonicParsing="false" text="Tạo phiếu thanh toán và in" />
+            <Button fx:id="btquaylai" layoutX="364.0" layoutY="307.0" mnemonicParsing="false" onAction="#close" text="Quay lại" />
+            <ComboBox fx:id="cbb" layoutX="410.0" layoutY="129.0" onAction="#actionComboBox" prefWidth="150.0" visibleRowCount="2" />
+            <Label layoutX="51.0" layoutY="52.0" text="Tên Nhà Cung Cấp :  " />
+            <Label fx:id="tenncc" layoutX="190.0" layoutY="52.0" text="Label" />
+            <Label fx:id="tfnoht" layoutX="190.0" layoutY="92.0" text="Label" />
+            <Label fx:id="tfdate" layoutX="412.0" layoutY="92.0" text="Label" />
+            <Label fx:id="tfnoconlai" layoutX="340.0" layoutY="212.0" text="Label" textFill="#e80606" visible="false">
+               <font>
+                  <Font size="23.0" />
+               </font></Label>
+            <Label fx:id="thongbao" layoutX="130.0" layoutY="166.0" text="Label" textFill="#f00b0b" visible="false" />
+            <Label fx:id="thongbao1" layoutX="409.0" layoutY="175.0" text="Label" textFill="#f00b0b" visible="false" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

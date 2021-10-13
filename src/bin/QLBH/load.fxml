@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="282.0" prefWidth="262.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="QLBH.LoginController">
+   <children>
+      <ImageView fitHeight="282.0" fitWidth="262.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@unnamed.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

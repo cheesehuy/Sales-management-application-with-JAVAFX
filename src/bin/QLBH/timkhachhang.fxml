@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="ap" prefHeight="472.0" prefWidth="666.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="tableKH" layoutX="17.0" layoutY="102.0" prefHeight="278.0" prefWidth="627.0">
+         <columns>
+            <TableColumn fx:id="idKH" prefWidth="75.0" text="Mã KH" />
+            <TableColumn fx:id="hvtKH" prefWidth="112.0" text="Tên Khách Hàng" />
+            <TableColumn fx:id="sdtKH" prefWidth="99.0" text="Số điện thoại" />
+            <TableColumn fx:id="nsKH" prefWidth="75.0" text="Năm sinh " />
+            <TableColumn fx:id="gtKH" prefWidth="75.0" text="Giới tính" />
+            <TableColumn fx:id="diemtichluy" prefWidth="99.0" text="Điểm tích lũy" />
+            <TableColumn fx:id="emailKH" prefWidth="88.0" text="Email" />
+         </columns>
+      </TableView>
+      <TextField fx:id="searchKH" layoutX="24.0" layoutY="61.0" />
+      <Button fx:id="them" layoutX="533.0" layoutY="61.0" mnemonicParsing="false" onAction="#them" text="Themkhachhang" />
+   </children>
+</AnchorPane>

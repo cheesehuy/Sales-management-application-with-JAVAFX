@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="QLBH.LichSuDatHangController">
+   <children>
+      <AnchorPane fx:id="ap" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="619.0">
+         <children>
+            <Label layoutX="203.0" layoutY="19.0" prefHeight="40.0" prefWidth="224.0" text="Lịch sử đặt hàng">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TableView layoutX="14.0" layoutY="85.0" prefHeight="281.0" prefWidth="592.0">
+              <columns>
+                <TableColumn prefWidth="86.0" text="Mã đặt hàng" />
+                <TableColumn prefWidth="83.0" text="Tên hàng" />
+                  <TableColumn prefWidth="100.0" text="Nhà cung cấp" />
+                  <TableColumn prefWidth="65.0" text="Số lượng" />
+                  <TableColumn prefWidth="58.0" text="Giá" />
+                  <TableColumn prefWidth="133.0" text="Thời gian" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

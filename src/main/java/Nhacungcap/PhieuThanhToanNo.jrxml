@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PhieuThanhToanNo" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a864866c-94ca-4116-a078-45170d087f43">
+	<parameter name="thanhtoan" class="java.lang.String"/>
+	<parameter name="noconlai" class="java.lang.String"/>
+	<parameter name="thoigian" class="java.lang.String"/>
+	<parameter name="sotienno" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="tenncc" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="40" splitType="Stretch">
+			<staticText>
+				<reportElement x="130" y="0" width="300" height="40" uuid="7108bace-ab85-41ee-814b-4cae37727375"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[CỬA HÀNG TIỆN LỢI SGU]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="41" splitType="Stretch">
+			<staticText>
+				<reportElement x="130" y="3" width="330" height="38" uuid="f6d7f872-c728-4768-b799-ddfa828d5400"/>
+				<textElement>
+					<font size="26"/>
+				</textElement>
+				<text><![CDATA[PHIẾU THANH TOÁN NỢ]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="76" splitType="Stretch">
+			<staticText>
+				<reportElement x="-20" y="0" width="130" height="30" uuid="4d44ec53-1ab2-46ce-8220-8ebb8d46d5ef"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Nhà cung cấp : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="0" width="90" height="30" uuid="46ff1904-20be-4830-9302-9010b55c805d"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[thời gian :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="360" y="0" width="100" height="30" uuid="57b12821-6b75-4243-b34b-c1afb18eff2d"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{thoigian}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="0" width="100" height="30" uuid="a964cea5-fad5-48e1-9301-c33264564137"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tenncc}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="130" splitType="Stretch">
+			<staticText>
+				<reportElement x="-20" y="0" width="100" height="30" uuid="f3823243-a62d-401b-9f20-ffc4819e515d"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Nợ lúc đầu]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-20" y="40" width="180" height="30" uuid="3c6683fa-d18a-4d7a-ab45-6489bb5080a1"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Số tiền thanh toán]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-20" y="80" width="100" height="30" uuid="bc9c42dc-63b8-41cd-9350-1ece1b1ee9f6"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Nợ còn lại]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="190" y="40" width="100" height="30" uuid="62f3344f-4a4f-4cac-8482-94d3f00e63bc"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{thanhtoan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="80" width="100" height="30" uuid="b7076da7-d77f-462c-9668-4cf3fec6d04c"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{noconlai}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="0" width="120" height="30" uuid="aa0dd954-65c1-4efa-8412-7162ee8d9186"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{sotienno}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

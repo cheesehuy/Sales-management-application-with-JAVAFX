@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="tb_NCC" layoutY="111.0" prefHeight="332.0" prefWidth="625.0">
+        <columns>
+          <TableColumn fx:id="id_NCC" prefWidth="75.0" text="id_NCC" />
+          <TableColumn fx:id="name_NCC" prefWidth="123.0" text="Nhà cung cấp" />
+            <TableColumn fx:id="diachi_NCC" prefWidth="115.0" text="Địa chỉ" />
+            <TableColumn fx:id="sdt_NCC" prefWidth="103.0" text="SĐT" />
+            <TableColumn fx:id="email_NCC" prefWidth="109.0" text="Email" />
+            <TableColumn fx:id="tienno_NCC" prefWidth="99.0" text="Số tiền nợ" />
+        </columns>
+      </TableView>
+      <Button fx:id="bt_NCC" layoutX="528.0" layoutY="40.0" mnemonicParsing="false" onAction="#ChonNCC" prefHeight="32.0" prefWidth="78.0" text="Chọn " />
+      <TextField fx:id="tf_ncc" layoutX="8.0" layoutY="80.0" prefHeight="25.0" prefWidth="175.0" />
+   </children>
+</AnchorPane>

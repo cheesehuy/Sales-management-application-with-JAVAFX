@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="850.0" prefWidth="1305.0" style="-fx-background-size: 1700;" styleClass="background" stylesheets="@../Nhacungcap/nhacungcap.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="KhachHang.khachhangController">
+   <children>
+      <TextField fx:id="searchKH" layoutX="27.0" layoutY="146.0" prefHeight="28.0" prefWidth="311.0" promptText="Tìm theo tên khách hàng" />
+      <TableView fx:id="tableKH" layoutX="27.0" layoutY="181.0" prefHeight="494.0" prefWidth="644.0">
+         <columns>
+            <TableColumn fx:id="idKH" prefWidth="75.0" text="Mã KH" />
+            <TableColumn fx:id="hvtKH" prefWidth="112.0" text="Tên Khách Hàng" />
+            <TableColumn fx:id="sdtKH" prefWidth="99.0" text="Số điện thoại" />
+            <TableColumn fx:id="nsKH" prefWidth="75.0" text="Năm sinh " />
+            <TableColumn fx:id="gtKH" prefWidth="75.0" text="Giới tính" />
+            <TableColumn fx:id="diemtichluy" prefWidth="99.0" text="Điểm tích lũy" />
+            <TableColumn fx:id="emailKH" prefWidth="88.0" text="Email" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tb_LSMH" layoutX="704.0" layoutY="245.0" prefHeight="295.0" prefWidth="548.0">
+        <columns>
+          <TableColumn fx:id="id_HoaDon" prefWidth="119.0" text="Mã Hóa Đơn" />
+          <TableColumn fx:id="thoigianmua" prefWidth="186.0" text="Thời gian mua" />
+            <TableColumn fx:id="tongtien" prefWidth="154.0" text="Tổng tiền" />
+        </columns>
+      </TableView>
+      <Label layoutX="704.0" layoutY="192.0" text="Lịch sử Mua Hàng của Khách Hàng">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="thongbao" layoutX="348.0" layoutY="146.0" prefHeight="28.0" prefWidth="303.0" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="416.0" layoutX="496.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LOGO.PNG" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

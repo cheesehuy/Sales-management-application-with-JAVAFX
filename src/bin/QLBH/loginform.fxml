@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="718.0" prefWidth="854.0" style="-fx-background-color: transparenttransparent;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="QLBH.LoginController">
+   <children>
+      <AnchorPane layoutX="107.0" layoutY="46.0" prefHeight="610.0" prefWidth="677.0" style="-fx-background-color: transparent;" styleClass="login">
+         <children>
+            <AnchorPane layoutX="339.0" layoutY="44.0" prefHeight="539.0" prefWidth="321.0" style="-fx-background-color: #66CCFF; -fx-background-radius: 2em; -fx-border-color: blue; -fx-border-radius: 2em;">
+               <children>
+                  <Label layoutX="96.0" layoutY="178.0" text="ĐĂNG NHẬP" textFill="#777272">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="submitButton" layoutX="136.0" layoutY="427.0" mnemonicParsing="false" onAction="#login" style="-fx-background-color: #CCCCCC; -fx-border-color: blue; -fx-border-radius: 1em; -fx-text-fill: black; -fx-background-radius: 1em;" text="Đăng Nhập" textFill="#393232" />
+                  <PasswordField fx:id="passwordField" layoutX="64.0" layoutY="315.0" onKeyPressed="#pw" prefHeight="35.0" prefWidth="222.0" promptText="Mật Khẩu" style="-fx-background-color: #66CCFF; -fx-prompt-text-fill: gray;">
+                     <font>
+                        <Font size="16.0" />
+                     </font></PasswordField>
+                  <TextField fx:id="emailIdField" layoutX="64.0" layoutY="260.0" prefHeight="35.0" prefWidth="222.0" promptText="Tài Khoản" style="-fx-background-color: #66CCFF; -fx-prompt-text-fill: gray;">
+                     <font>
+                        <Font size="16.0" />
+                     </font></TextField>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="255.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Nhacungcap/nameicon.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="255.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Nhacungcap/iconkey.png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="100.0" endY="0.20001220703125" layoutX="165.0" layoutY="295.0" startX="-90.0" startY="0.20001220703125" />
+                  <Line endX="100.0" layoutX="164.0" layoutY="350.0" startX="-90.0" />
+                  <ImageView fx:id="minimize" fitHeight="27.0" fitWidth="36.0" layoutX="225.0" layoutY="28.0" onMouseClicked="#minimize" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@minimize.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="thongbaologin" layoutX="74.0" layoutY="395.0" text="Label" textFill="#f20808" visible="false">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="thongbao" layoutX="74.0" layoutY="365.0" text="Label" textFill="#f80808" visible="false">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="close" fitHeight="27.0" fitWidth="38.0" layoutX="272.0" layoutY="14.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@close.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="load" layoutX="149.0" layoutY="428.0" mnemonicParsing="false" onAction="#load" text="Button" visible="false" />
+                  <CheckBox fx:id="ghinho" layoutX="71.0" layoutY="357.0" mnemonicParsing="false" text="Lưu tài khoản">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="626.0" prefWidth="381.0" style="-fx-background-color: white; -fx-background-radius: 4em; -fx-border-radius: 4em; -fx-border-color: blue;">
+               <children>
+                  <ImageView fitHeight="227.0" fitWidth="235.0" layoutX="73.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@backgroundSGU.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="85.0" layoutY="289.0" style="-fx-text-fill: red;" text="KIỂM THỬ PHẦN MỀM" textFill="#ea0909">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="79.0" layoutY="416.0" text="Lê Hoàng Tân" />
+                  <Label layoutX="63.0" layoutY="454.0" text="Lê Quang Sang" />
+                  <Label layoutX="263.0" layoutY="454.0" text="Hồng Thái" />
+                  <Label layoutX="175.0" layoutY="416.0" text="Trương Nguyễn Yến Nhi" />
+                  <Label layoutX="175.0" layoutY="454.0" text="Từ Chí Huy" />
+                  <Label layoutX="112.0" layoutY="337.0" text="TS.Nguyễn Thành Huy">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Line endX="100.0" layoutX="197.0" layoutY="505.0" startX="-100.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

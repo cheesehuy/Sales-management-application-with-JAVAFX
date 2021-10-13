@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1382.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="QLBH.chucnangquanly">
+	<tabs>
+		<Tab text="QL BÁN HÀNG">
+			<content>
+				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+			</content>
+		</Tab>
+		<Tab closable="false" text="QL NHÂN VIÊN">
+			<content>
+				<AnchorPane fx:id="anchorpane" prefHeight="586.0" prefWidth="1137.0">
+					<children>
+						<Label alignment="CENTER" layoutX="101.0" layoutY="41.0" prefHeight="36.0" prefWidth="303.0" text="CỬA HÀNG TIỆN LỢI SGU">
+							<font>
+								<Font name="System Bold Italic" size="24.0" />
+							</font>
+						</Label>
+						<ImageView fitHeight="89.0" fitWidth="124.0" layoutX="440.0" layoutY="15.0">
+							<image>
+								<Image url="file:/C:/Users/Admin/Desktop/ảnh%20chế/unnamed.png" />
+							</image>
+						</ImageView>
+						<ComboBox fx:id="Listnhanvien" layoutX="178.0" layoutY="77.0" onAction="#ListNhanvien" prefHeight="23.0" prefWidth="179.0" />
+						<TextField fx:id="search" layoutX="126.0" layoutY="135.0" prefHeight="30.0" prefWidth="231.0" />
+						<Label layoutX="25.0" layoutY="134.0" prefHeight="30.0" prefWidth="114.0" text="Tìm kiếm nhân viên">
+							<font>
+								<Font size="10.0" />
+							</font>
+						</Label>
+						<Button fx:id="idaddNV" alignment="BASELINE_LEFT" layoutX="362.0" layoutY="134.0" mnemonicParsing="false" onAction="#ThemNV" prefHeight="32.0" prefWidth="152.0" text="Thêm nhân viên" />
+						<ImageView fitHeight="29.0" fitWidth="25.0" layoutX="489.0" layoutY="136.0">
+							<image>
+								<Image url="file:/C:/Users/Admin/Desktop/ảnh%20chế/addperson.png" />
+							</image>
+						</ImageView>
+						<ImageView fitHeight="29.0" fitWidth="30.0" layoutX="1128.0" layoutY="14.0">
+							<image>
+								<Image url="file:/C:/Users/Admin/Desktop/ảnh%20chế/download.png" />
+							</image>
+						</ImageView>
+						<Label layoutX="1110.0" layoutY="40.0" prefHeight="23.0" prefWidth="79.0" text="Lê Hoàng Tân">
+							<font>
+								<Font size="10.0" />
+							</font>
+						</Label>
+						<TableView fx:id="tableNV" layoutX="57.0" layoutY="179.0" prefHeight="393.0" prefWidth="576.0">
+							<columns>
+								<TableColumn fx:id="hovaten" prefWidth="115.0" text="Họ và tên" />
+								<TableColumn fx:id="ngaysinh" minWidth="0.0" prefWidth="81.0" text="Năm sinh" />
+								<TableColumn fx:id="chucvu" prefWidth="91.0" text="Chức vụ" />
+								<TableColumn fx:id="sdt" minWidth="0.0" prefWidth="111.0" text="Số điện thoại" />
+								<TableColumn fx:id="cmnd" minWidth="0.0" prefWidth="88.0" text="CMND" />
+								<TableColumn fx:id="diachi" minWidth="0.0" prefWidth="88.0" text="Địa chỉ" />
+							</columns>
+						</TableView>
+						<Button fx:id="idreload" layoutX="576.0" layoutY="153.0" mnemonicParsing="false" onAction="#reload" prefHeight="21.0" prefWidth="53.0" text="reload" />
+						<ImageView fx:id="imgnhanvien" fitHeight="110.0" fitWidth="221.0" layoutX="802.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
+						<Label layoutX="685.0" layoutY="223.0" prefHeight="36.0" prefWidth="126.0" text="Họ và tên ">
+							<font>
+								<Font size="24.0" />
+							</font>
+						</Label>
+						<Label layoutX="748.0" layoutY="14.0" prefHeight="37.0" prefWidth="337.0" text="HỒ SƠ CÁ NHÂN NHÂN VIÊN">
+							<font>
+								<Font size="24.0" />
+							</font>
+						</Label>
+						<Label layoutX="683.0" layoutY="273.0" prefHeight="39.0" prefWidth="116.0" text="Ngày sinh ">
+							<font>
+								<Font size="24.0" />
+							</font>
+						</Label>
+						<Label layoutX="684.0" layoutY="327.0" prefHeight="35.0" prefWidth="100.0" text="Chức vụ ">
+							<font>
+								<Font size="24.0" />
+							</font>
+						</Label>
+						<Label layoutX="683.0" layoutY="427.0" prefHeight="26.0" prefWidth="76.0" text="SĐT ">
+							<font>
+								<Font size="24.0" />
+							</font>
+						</Label>
+						<Label layoutX="683.0" layoutY="478.0" prefHeight="26.0" prefWidth="76.0" text="CMND">
+							<font>
+								<Font size="24.0" />
+							</font>
+						</Label>
+						<Label layoutX="689.0" layoutY="527.0" prefHeight="39.0" prefWidth="119.0" text="Địa chỉ ">
+							<font>
+								<Font size="24.0" />
+							</font>
+						</Label>
+						<TextField fx:id="hovaten_nv" editable="false" layoutX="810.0" layoutY="224.0" prefHeight="36.0" prefWidth="350.0">
+							<font>
+								<Font size="18.0" />
+							</font>
+						</TextField>
+						<TextField fx:id="cv_nv" editable="false" layoutX="805.0" layoutY="328.0" prefHeight="38.0" prefWidth="353.0">
+							<font>
+								<Font size="18.0" />
+							</font>
+						</TextField>
+						<TextField fx:id="sdt_nv" editable="false" layoutX="805.0" layoutY="427.0" prefHeight="37.0" prefWidth="355.0">
+							<font>
+								<Font size="18.0" />
+							</font>
+						</TextField>
+						<TextField fx:id="cmnd_nv" editable="false" layoutX="805.0" layoutY="474.0" prefHeight="44.0" prefWidth="354.0">
+							<font>
+								<Font size="18.0" />
+							</font>
+						</TextField>
+						<TextField fx:id="diachi_nv" editable="false" layoutX="804.0" layoutY="530.0" prefHeight="44.0" prefWidth="355.0">
+							<font>
+								<Font size="18.0" />
+							</font>
+						</TextField>
+						<Button layoutX="1033.0" layoutY="77.0" mnemonicParsing="false" onAction="#XoaNhanvien" text="Xóa" fx:id="xoa_nv" />
+						<Button fx:id="capnhat_nv" layoutX="1085.0" layoutY="77.0" mnemonicParsing="false" onAction="#CapNhatNhanvien" text="Cập nhật" />
+						<Label layoutX="683.0" layoutY="179.0" prefHeight="26.0" prefWidth="76.0" text="id_nv">
+							<font>
+								<Font size="24.0" />
+							</font>
+						</Label>
+						<TextField fx:id="id_nv" editable="false" layoutX="808.0" layoutY="179.0" prefHeight="29.0" prefWidth="126.0" />
+						<Button fx:id="luucapnhat" layoutX="878.0" layoutY="593.0" mnemonicParsing="false" onAction="#luucapnhat" prefHeight="38.0" prefWidth="122.0" text="Lưu" visible="false" />
+						<Button fx:id="reset" layoutX="1044.0" layoutY="141.0" mnemonicParsing="false" onAction="#Reset" text="reset to default" visible="false" />
+						<Label layoutX="683.0" layoutY="376.0" prefHeight="40.0" prefWidth="102.0" text="Giới tính">
+							<font>
+								<Font size="24.0" />
+							</font>
+						</Label>
+						<TextField fx:id="gt_nv" editable="false" layoutX="805.0" layoutY="380.0" prefHeight="37.0" prefWidth="357.0">
+							<font>
+								<Font size="18.0" />
+							</font>
+						</TextField>
+						<DatePicker fx:id="ns_nv" editable="false" layoutX="809.0" layoutY="280.0" prefHeight="35.0" prefWidth="351.0" />
+						<Label layoutX="949.0" layoutY="175.0" prefHeight="39.0" prefWidth="161.0" text="Ngày vào làm ">
+							<font>
+								<Font size="24.0" />
+							</font>
+						</Label>
+						<DatePicker fx:id="ngayvaolam" editable="false" layoutX="1118.0" layoutY="178.0" prefHeight="35.0" prefWidth="215.0" />
+					</children>
+				</AnchorPane>
+			</content>
+		</Tab>
+		<Tab text="QL NHÀ CUNG CẤP">
+			<content>
+				<AnchorPane prefHeight="629.0" prefWidth="771.0">
+					<children>
+						<Label alignment="CENTER" layoutX="587.0" layoutY="62.0" prefHeight="36.0" prefWidth="351.0" text="Nhà Cung Cấp">
+							<font>
+								<Font name="System Bold Italic" size="24.0" />
+							</font>
+						</Label>
+						<TableView fx:id="tableNhacungcap" layoutX="210.0" layoutY="158.0" prefHeight="404.0" prefWidth="989.0">
+							<columns>
+
+								<TableColumn fx:id="tenncc" prefWidth="200.00003051757812" text="Tên NCC" />
+								<TableColumn fx:id="diachi1" prefWidth="180.79998779296875" text="Địa Chỉ" />
+								<TableColumn fx:id="sotienno" minWidth="0.0" prefWidth="148.79998779296875" text="Công Nợ" />
+								<TableColumn fx:id="email" prefWidth="151.99993896484375" text="Email" />
+								<TableColumn fx:id="sodienthoai" prefWidth="143.2000732421875" text="SĐT" />
+                        <TableColumn fx:id="deleteNCC" prefWidth="162.40004882812502" text="Xóa Nhà Cung Cấp" />
+							</columns>
+						</TableView>
+						<Button fx:id="idreloadncc" layoutX="1103.0" layoutY="111.0" mnemonicParsing="false" onAction="#Reloadncc" text="Reload" />
+						<Button fx:id="idluuncc" layoutX="939.0" layoutY="349.0" mnemonicParsing="false" text="Lưu" visible="false" />
+								<Button fx:id="taonhacungcap" layoutX="381.0" layoutY="111.0" mnemonicParsing="false" onAction="#Taonhacungcap" prefHeight="13.0" prefWidth="165.0" text="Tạo Nhà Cung Cấp" />
+								<Button fx:id="thanhtoancongno" layoutX="210.0" layoutY="111.0" mnemonicParsing="false" onAction="#Thanhtoancongno" text="Thanh Toán Công Nợ" />
+					</children>
+				</AnchorPane>
+			</content>
+		</Tab>
+		<Tab text="THỐNG KÊ">
+			<content>
+				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+			</content>
+		</Tab>
+		<Tab text="KIỂM TRA HÀNG">
+			<content>
+				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+					<children>
+						<TableView fx:id="phieudathangkt" layoutX="164.0" layoutY="198.0" prefHeight="368.0" prefWidth="712.0">
+							<columns>
+								<TableColumn fx:id="madathangkt" prefWidth="205.0" text="Mã đặt hàng" />
+								<TableColumn fx:id="thoigiandatkt" prefWidth="184.0" text="Thời gian đặt" />
+								<TableColumn fx:id="tongtienkt" prefWidth="130.0" text="Tổng tiền " />
+								<TableColumn fx:id="mancckt" prefWidth="192.0" text="Mã nhà cung cấp" />
+							</columns>
+						</TableView>
+						<Label layoutX="549.0" layoutY="76.0" text="KIỂM TRA HÀNG" />
+						<Label layoutX="164.0" layoutY="137.0" text="DANH SÁCH PHIẾU ĐẶT HÀNG" />
+						<Button layoutX="977.0" layoutY="522.0" mnemonicParsing="false" onAction="#changeSceneKiemtrahang" text="Chi tiết phiếu đặt hàng" />
+					</children>
+				</AnchorPane>
+			</content>
+		</Tab>
+		<Tab text="QL DANH MỤC">
+			<content>
+				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+					<children>
+						<TabPane fx:id="tabPaneQLDM" layoutY="135.0" prefHeight="442.0" prefWidth="899.0" tabClosingPolicy="UNAVAILABLE">
+							<tabs>
+								<Tab fx:id="sTab_PhieuHoaDon" text="Danh mục phiếu hóa đơn">
+									<content>
+										<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+											<children>
+												<TableView fx:id="tableHoaDon" layoutX="21.0" layoutY="113.0" prefHeight="200.0" prefWidth="621.0">
+													<columns>
+														<TableColumn fx:id="mahoadon" prefWidth="111.19998741149902" text="Mã hóa đơn " />
+														<TableColumn fx:id="thoigianmua" prefWidth="152.79998779296875" text="Thời gian mua " />
+														<TableColumn fx:id="tonggia" prefWidth="117.5999755859375" text="Tổng giá " />
+														<TableColumn fx:id="makh" minWidth="0.0" prefWidth="123.19998168945312" text="Mã khách hàng " />
+														<TableColumn fx:id="manv1" prefWidth="134.4000244140625" text="Mã nhân viên " />
+													</columns>
+												</TableView>
+												<TextField fx:id="searchPHD" layoutX="383.0" layoutY="48.0" promptText="Tìm theo mã hóa đơn" />
+												<Label fx:id="lbDanhMucPHD" layoutX="113.0" layoutY="30.0" text="DANH MỤC PHIẾU HÓA ĐƠN " />
+												<ScrollBar fx:id="verticalPHD" layoutX="643.0" layoutY="113.0" orientation="VERTICAL" prefHeight="197.0" prefWidth="14.0" />
+												<Button layoutX="686.0" layoutY="297.0" mnemonicParsing="false" onAction="#changeSceneHoadonDetail" text="Chi tiết hóa đơn" />
+											</children>
+										</AnchorPane>
+									</content>
+								</Tab>
+								<Tab fx:id="sTab_PhieuDatHang" text="Danh mục phiếu đặt hàng ">
+									<content>
+										<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+											<children>
+												<Label fx:id="lbDanhMucPDH" layoutX="113.0" layoutY="24.0" text="DANH MỤC PHIẾU ĐẶT HÀNG " />
+												<TextField fx:id="searchPDH" layoutX="408.0" layoutY="65.0" promptText="Tìm theo mã hóa đơn " />
+												<TableView fx:id="tablePhieuDatHang" layoutX="37.0" layoutY="143.0" prefHeight="200.0" prefWidth="603.0">
+													<columns>
+														<TableColumn fx:id="madathang" prefWidth="102.39997100830078" text="Mã đặt hàng " />
+														<TableColumn fx:id="mancc" prefWidth="124.0" text="Mã NCC" />
+														<TableColumn fx:id="thoigiandat" prefWidth="157.0" text="Thời gian đặt " />
+														<TableColumn fx:id="tongtien1" prefWidth="210.0" text="Tổng tiền " />
+													</columns>
+												</TableView>
+												<ScrollBar fx:id="verticalPDH" layoutX="633.0" layoutY="144.0" orientation="VERTICAL" prefHeight="198.0" prefWidth="14.0" />
+												<Button layoutX="724.0" layoutY="302.0" mnemonicParsing="false" onAction="#changeSceneDathangDetail" text="Chi tiết đặt hàng" />
+											</children>
+										</AnchorPane>
+									</content>
+								</Tab>
+								<Tab fx:id="sTab_PhieuNhapHang" text="Danh mục phiếu nhập hàng">
+									<content>
+										<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+											<children>
+												<Label fx:id="lbDanhMucPNH" layoutX="163.0" layoutY="48.0" text="DANH MỤC PHIẾU NHẬP HÀNG " />
+												<TextField fx:id="searchPNH" layoutX="410.0" layoutY="82.0" promptText="Tìm theo mã hóa đơn" />
+												<TableView fx:id="tablePhieuNhapHang" layoutX="47.0" layoutY="134.0" prefHeight="200.0" prefWidth="567.0">
+													<columns>
+														<TableColumn fx:id="manhaphang" prefWidth="113.60004425048828" text="Mã phiếu nhập " />
+														<TableColumn fx:id="mancc2" prefWidth="88.800048828125" text="Mã NCC " />
+														<TableColumn fx:id="thoigiannhap" prefWidth="102.39996337890625" text="Thời gian nhập " />
+														<TableColumn fx:id="tongtien" prefWidth="88.79998779296875" text="Tổng tiền " />
+														<TableColumn fx:id="manv2" prefWidth="171.19996948242192" text="Nhân viên " />
+													</columns>
+												</TableView>
+												<ScrollBar fx:id="verticalPNH" layoutX="614.0" layoutY="134.0" orientation="VERTICAL" prefHeight="199.0" prefWidth="14.0" />
+												<Button layoutX="679.0" layoutY="303.0" mnemonicParsing="false" onAction="#changeSceneNhaphangDetail" text="Chi tiết phiếu nhập hàng" />
+											</children>
+										</AnchorPane>
+									</content>
+								</Tab>
+								<Tab fx:id="sTab_PhieuTraHang" text="Danh mục phiếu trả hàng ">
+									<content>
+										<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="254.0" prefWidth="678.0">
+											<children>
+												<TableView fx:id="tablePhieuTraHang" layoutX="49.0" layoutY="114.0" prefHeight="200.0" prefWidth="565.0">
+													<columns>
+														<TableColumn fx:id="maphieutra" prefWidth="163.0" text="Mã phiếu trả " />
+														<TableColumn fx:id="mancc3" prefWidth="128.0" text="Mã NCC " />
+														<TableColumn fx:id="thoigiantra" prefWidth="273.0" text="Thời gian trả " />
+													</columns>
+												</TableView>
+												<TextField fx:id="searchPTH" layoutX="380.0" layoutY="65.0" promptText="Tìm theo mã phiếu trả " />
+												<Label fx:id="lbDanhMucPTH" layoutX="142.0" layoutY="47.0" text="DANH MỤC PHIẾU TRẢ HÀNG " />
+												<ScrollBar fx:id="verticalPTH" layoutX="615.0" layoutY="114.0" orientation="VERTICAL" prefHeight="198.0" prefWidth="14.0" />
+												<Button layoutX="675.0" layoutY="297.0" mnemonicParsing="false" onAction="#changeSceneTrahangDetail" text="Chi tiết trả hàng" />
+											</children>
+										</AnchorPane>
+									</content>
+								</Tab>
+							</tabs>
+						</TabPane>
+						<Text fx:id="txtTitle_store" layoutX="167.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+						<Label fx:id="lbTitleStore" contentDisplay="CENTER" layoutX="193.0" layoutY="46.0" text="CỬA HÀNG TIỆN LỢI  " textAlignment="JUSTIFY" textFill="#0e0000" textOverrun="CENTER_ELLIPSIS">
+							<font>
+								<Font name="Arial Bold" size="14.0" />
+							</font>
+						</Label>
+						<ImageView fx:id="logo" fitHeight="86.0" fitWidth="93.0" layoutX="36.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../../../../../QLBHH/src/main/java/QLBH/logo.jpg" />
+							</image>
+						</ImageView>
+						<ImageView fx:id="avata" fitHeight="92.0" fitWidth="89.0" layoutX="581.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../../../../../QLBHH/src/main/java/QLBH/avata.jpg" />
+							</image>
+						</ImageView>
+					</children>
+				</AnchorPane>
+			</content>
+		</Tab>
+		<Tab text="QL KHÁCH HÀNG">
+			<content>
+				<AnchorPane prefHeight="200.0" prefWidth="200.0">
+					<children>
+						<Label layoutX="295.0" layoutY="53.0" prefHeight="48.0" prefWidth="270.0" text="KHÁCH HÀNG ">
+							<font>
+								<Font name="System Bold" size="36.0" />
+							</font>
+						</Label>
+						<TextField fx:id="searchKH" layoutX="60.0" layoutY="136.0" prefHeight="28.0" prefWidth="311.0" promptText="Tìm theo tên khách hàng" />
+						<TableView fx:id="tableKH" layoutX="27.0" layoutY="181.0" prefHeight="360.0" prefWidth="624.0">
+							<columns>
+								<TableColumn fx:id="idKH" prefWidth="75.0" text="Mã KH" />
+								<TableColumn fx:id="hvtKH" prefWidth="112.0" text="Tên Khách Hàng" />
+								<TableColumn fx:id="sdtKH" prefWidth="99.0" text="Số điện thoại" />
+								<TableColumn fx:id="nsKH" prefWidth="75.0" text="Năm sinh " />
+								<TableColumn fx:id="gtKH" prefWidth="75.0" text="Giới tính" />
+								<TableColumn fx:id="diemtichluy" prefWidth="99.0" text="Điểm tích lũy" />
+								<TableColumn fx:id="emailKH" prefWidth="88.0" text="Email" />
+							</columns>
+						</TableView>
+					</children>
+				</AnchorPane>
+			</content>
+		</Tab>
+
+		<Tab text="QL KHO">
+			<content>
+				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+					<children>
+						<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="457.0" prefWidth="658.0">
+							<children>
+								<AnchorPane layoutX="-8.0" prefHeight="633.0" prefWidth="1051.0">
+									<children>
+										<Label alignment="CENTER" layoutX="379.0" layoutY="76.0" prefHeight="88.0" prefWidth="360.0" text="QUẢN LÝ KHO">
+											<font>
+												<Font name="System Bold Italic" size="48.0" />
+											
+         									 </font>
+     									</Label>
+                              <TextField fx:id="Timkiem" layoutX="28.0" layoutY="221.0" prefHeight="32.0" prefWidth="290.0" />
+                              <TableView fx:id="tableSP" layoutX="27.0" layoutY="255.0" prefHeight="375.0" prefWidth="1163.0">
+                                 <columns>
+                                    <TableColumn fx:id="tensanpham" prefWidth="115.0" text="Tên Sản Phẩm" />
+                                    <TableColumn fx:id="masanpham" minWidth="0.0" prefWidth="93.0" text="Mã sản phẩm" />
+                                    <TableColumn fx:id="donvitinh" minWidth="0.0" prefWidth="98.0" text="Số lượng" />
+                                    <TableColumn fx:id="giatien" minWidth="0.0" prefWidth="97.0" text="Giá tiền" />
+                                    <TableColumn fx:id="loaisanpham" prefWidth="93.0" text="Loại sản phẩm" />
+                                    <TableColumn fx:id="donvi" prefWidth="121.0" text="Đơn vị" />
+                                    <TableColumn fx:id="imageSp" prefWidth="274.0" text="Image" />
+                                    <TableColumn prefWidth="132.0" fx:id="xoasp" />
+                                    <TableColumn fx:id="CapNhat" prefWidth="144.0" />
+                                 </columns>
+                              </TableView>
+                              <Button fx:id="lichsudathang" layoutX="336.0" layoutY="225.0" mnemonicParsing="false" onAction="#LichSuDatHang" text="Lịch sử đặt hàng" />
+                              <Button fx:id="lapphieudathang" layoutX="509.0" layoutY="225.0" mnemonicParsing="false" onAction="#LapPhieuDatHang" text="Lập phiếu đặt hàng" />
+                              <Button layoutX="452.0" layoutY="225.0" mnemonicParsing="false" text="+SP" />
+                              <Button fx:id="themsanpham" layoutX="452.0" layoutY="225.0" mnemonicParsing="false" onAction="#ThemSP" text="+SP" />
+                           </children>
+                        </AnchorPane>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="975.0" layoutY="20.0" prefHeight="29.0" prefWidth="82.0" text="Hong Thai" />
+                  <Button fx:id="DangXuat" layoutX="1064.0" layoutY="18.0" mnemonicParsing="false" text="Dang xuat" />
+               </children>
+            </AnchorPane>
+        </content>
+		</Tab>
+	</tabs>
+</TabPane>

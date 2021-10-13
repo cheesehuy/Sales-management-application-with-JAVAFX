@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="679.0" prefWidth="1444.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="QLBH.chucnangnhanvienController">
+   <tabs>
+      <Tab text="QL BÁN HÀNG">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="692.0" prefWidth="1481.0">
+               <children>
+                  <TableView fx:id="TableSP" layoutX="31.0" layoutY="337.0" prefHeight="226.0" prefWidth="760.0">
+                    <columns>
+                      <TableColumn fx:id="tensanpham" prefWidth="133.0" text="SP" />
+                        <TableColumn fx:id="loaisanpham" prefWidth="162.0" text="Loại sản phẩm" />
+                        <TableColumn fx:id="giatien" prefWidth="192.0" text="Đơn giá" />
+                        <TableColumn fx:id="hinhanhsanpham" prefWidth="292.0" text="Hình ảnh " />
+                    </columns>
+                  </TableView>
+                  <TableView fx:id="hoadon" layoutX="32.0" layoutY="61.0" prefHeight="195.0" prefWidth="759.0">
+                     <columns>
+                        <TableColumn fx:id="masanpham1" prefWidth="75.0" text="Id" />
+                        <TableColumn fx:id="tensanpham1" prefWidth="75.0" text="SP" />
+                        <TableColumn fx:id="loaisanpham1" prefWidth="135.0" text="Loại sản phẩm" />
+                        <TableColumn fx:id="donvitnh1" prefWidth="75.0" text="Số lượng " />
+                        <TableColumn fx:id="giatien1" prefWidth="110.0" text="Đơn giá" />
+                        <TableColumn fx:id="donvi1" prefWidth="101.0" text="quantity" />
+                        <TableColumn fx:id="thanhtien" prefWidth="90.0" text="Thành tiền" />
+                        <TableColumn prefWidth="97.0" fx:id="xoaSP" />
+                     </columns>
+                  </TableView>
+                  <AnchorPane layoutX="791.0" layoutY="38.0" prefHeight="570.0" prefWidth="640.0">
+                     <children>
+                        <Text fill="#225abf" fontSmoothingType="LCD" layoutX="219.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOA DON" wrappingWidth="232.8876953125">
+                           <font>
+                              <Font size="45.0" />
+                           </font></Text>
+                        <Label layoutX="62.0" layoutY="85.0" text="Tong tien">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="61.0" layoutY="285.0" text="Tien thua ">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="61.0" layoutY="149.0" text="Khach tra">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tongtien" layoutX="174.0" layoutY="83.0" prefHeight="27.0" prefWidth="159.0" />
+                        <TextField fx:id="khachtra" layoutX="174.0" layoutY="150.0" />
+                        <TextField fx:id="tienthua" layoutX="174.0" layoutY="270.0" />
+                        <Button fx:id="thanhtoan" layoutX="196.0" layoutY="394.0" mnemonicParsing="false" onAction="#thanhtoan" prefHeight="43.0" prefWidth="230.0" text="Purchase" textFill="#225abf">
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                           <effect>
+                              <Blend />
+                           </effect>
+                        </Button>
+                        <Label fx:id="thongbao" layoutX="174.0" layoutY="185.0" prefHeight="17.0" prefWidth="160.0" textFill="#9e1d1d" />
+                        <Line endX="100.0" layoutX="311.0" layoutY="359.0" startX="-100.0" />
+                        <Label layoutX="344.0" layoutY="214.0" text="Khach Hang:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="353.0" layoutY="274.0" text="Tich luy:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="61.0" layoutY="214.0" text="Giam Gia (%)">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="giamgia" layoutX="174.0" layoutY="212.0" />
+                        <Button fx:id="timkhachhang" layoutX="519.0" layoutY="212.0" mnemonicParsing="false" onAction="#timkhachhang" text="Search" />
+                        <Button fx:id="chinhsachkhuyenmai" layoutX="364.0" layoutY="150.0" mnemonicParsing="false" onAction="#chinhsachkhuyenmai" text="Chinh Sach Khuyen mai" />
+                        <Label fx:id="khachhangg" layoutX="452.0" layoutY="217.0" prefHeight="17.0" prefWidth="61.0" />
+                        <Label fx:id="diemtichluy" layoutX="452.0" layoutY="277.0" prefHeight="17.0" prefWidth="61.0" />
+                     </children>
+                  </AnchorPane>
+                  <TextField fx:id="Timkiem" layoutX="141.0" layoutY="286.0" />
+                  <Label layoutX="32.0" layoutY="291.0" text="Search Products" />
+               </children></AnchorPane>
+         </content>
+      </Tab>
+   </tabs>
+</TabPane>

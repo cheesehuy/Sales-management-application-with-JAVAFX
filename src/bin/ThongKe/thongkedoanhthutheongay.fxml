@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="863.0" prefWidth="1368.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ThongKe.TKDTtheongayController">
+   <children>
+      <LineChart fx:id="line_chart" layoutX="601.0" layoutY="98.0" prefHeight="620.0" prefWidth="683.0">
+        <xAxis>
+          <CategoryAxis fx:id="ngay" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="doanhthu" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <ComboBox fx:id="cbb_thang" layoutX="614.0" layoutY="63.0" onAction="#ThongKeThang" prefWidth="150.0" />
+      <ComboBox fx:id="listthongke" layoutX="400.0" layoutY="14.0" onAction="#ListThongKe" prefHeight="39.0" prefWidth="409.0" />
+      <BarChart fx:id="bar_chart" layoutX="77.0" layoutY="96.0" prefHeight="650.0" prefWidth="516.0">
+         <xAxis>
+            <CategoryAxis fx:id="Sanpham" side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis fx:id="Soluongbanra" side="LEFT" />
+         </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>

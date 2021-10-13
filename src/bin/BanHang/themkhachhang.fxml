@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="458.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BanHang.themkhachhangController">
+   <children>
+      <ImageView fitHeight="458.0" fitWidth="538.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@background1.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="155.0" layoutY="65.0" text="Khách hàng mới" textFill="#1a1818">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="115.0" text="Tên KH">
+         <font>
+            <Font name="Apple Braille" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="156.0" text="Địa chỉ">
+         <font>
+            <Font name="Apple Braille" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="197.0" text="SĐT">
+         <font>
+            <Font name="Apple Braille" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="288.0" text="Giới tính">
+         <font>
+            <Font name="Apple Braille" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="242.0" text="Ngày sinh">
+         <font>
+            <Font name="Apple Braille" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="333.0" text="Mail">
+         <font>
+            <Font name="Apple Braille" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="210.0" layoutY="114.0" />
+      <TextField fx:id="address" layoutX="210.0" layoutY="155.0" />
+      <TextField fx:id="numberphone" layoutX="210.0" layoutY="195.0" prefHeight="27.0" prefWidth="161.0" />
+      <TextField fx:id="mail" layoutX="210.0" layoutY="332.0" />
+      <DatePicker fx:id="birth" layoutX="210.0" layoutY="241.0" />
+      <Button fx:id="them" layoutX="128.0" layoutY="388.0" mnemonicParsing="false" onAction="#themkhachhang" text="THÊM" />
+      <Button fx:id="quaylai" layoutX="325.0" layoutY="388.0" mnemonicParsing="false" onAction="#quaylai" text="Thoát" />
+      <ComboBox fx:id="sex" layoutX="210.0" layoutY="287.0" prefHeight="27.0" prefWidth="161.0" />
+      <Label fx:id="checkname" layoutX="413.0" layoutY="111.0" prefHeight="33.0" prefWidth="117.0" textFill="#d71313" />
+      <Label fx:id="checkaddress" layoutX="413.0" layoutY="160.0" prefHeight="17.0" prefWidth="107.0" textFill="#dd0f0f" />
+      <Label fx:id="checkbirth" layoutX="413.0" layoutY="238.0" prefHeight="33.0" prefWidth="117.0" textFill="#ee0707" />
+      <Label fx:id="checknumber" layoutX="413.0" layoutY="193.0" prefHeight="33.0" prefWidth="107.0" textFill="#e41111" />
+      <Label fx:id="checkgender" layoutX="413.0" layoutY="284.0" prefHeight="33.0" prefWidth="117.0" textFill="#da0e0e" />
+      <Label fx:id="checkmail" layoutX="413.0" layoutY="329.0" prefHeight="33.0" prefWidth="117.0" textFill="#e80f0f" />
+   </children>
+</AnchorPane>

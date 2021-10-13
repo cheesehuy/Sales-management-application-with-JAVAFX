@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="358.0" prefWidth="626.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="QLBH.ThemNCCController">
+
+   <children>
+      <Label layoutX="37.0" layoutY="135.0" text="Email">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="329.0" layoutY="135.0" text="Địa Chỉ">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="37.0" layoutY="84.0" text="Tên NCC">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="329.0" layoutY="85.0" text="SĐT">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <TextField fx:id="tftenncc" layoutX="143.0" layoutY="88.0" />
+      <TextField fx:id="tfsdt" layoutX="411.0" layoutY="87.0" />
+      <TextField fx:id="tfdiachi" layoutX="411.0" layoutY="137.0" />
+      <TextField fx:id="tfemail" layoutX="143.0" layoutY="138.0" />
+      <Button fx:id="idsave" layoutX="218.0" layoutY="266.0" mnemonicParsing="false" onAction="#save" text="Lưu">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="idclose" layoutX="329.0" layoutY="266.0" mnemonicParsing="false" onAction="#close" text="Quay lại">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <TextField fx:id="tfsotienno" layoutX="143.0" layoutY="182.0" />
+      <Label layoutX="37.0" layoutY="179.0" text="Số tiền nợ ">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="218.0" layoutY="29.0" text="TẠO NHÀ CUNG CẤP">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

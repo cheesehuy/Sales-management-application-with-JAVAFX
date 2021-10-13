@@ -1,0 +1,10 @@
+.chart-title {
+  -fx-text-fill: white;
+  -fx-font-size: 1.6em;
+}
+.root{
+	-fx-background-image:url("bg1.jpg");
+}
+.cbb{
+	-fx-font-size: 16px;
+}

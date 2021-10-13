@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="782.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="270.0" layoutY="71.0" prefHeight="38.0" prefWidth="237.0" text="PHIẾU NHẬP HÀNG">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="ListSP" layoutX="103.0" layoutY="148.0" prefHeight="201.0" prefWidth="529.0">
+        <columns>
+          <TableColumn fx:id="masanpham" prefWidth="114.0" text="Mã sản phẩm" />
+          <TableColumn fx:id="tensanpham" prefWidth="102.0" text="Tên sản phẩm " />
+            <TableColumn fx:id="soluongnhap" prefWidth="124.0" text="Số lượng nhập" />
+            <TableColumn fx:id="donvitinh" prefWidth="75.0" text="Đơn vị tính " />
+            <TableColumn fx:id="dongia" prefWidth="113.0" text="Đơn giá" />
+        </columns>
+      </TableView>
+      <Label layoutX="103.0" layoutY="109.0" text="idPhieu" />
+      <Label fx:id="idphieunhaphang" layoutX="155.0" layoutY="109.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ap" maxHeight="-Infinity"
+	maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+	prefHeight="664.0" prefWidth="1090.0"
+	style="-fx-background-color: #00CCFF; -fx-border-color: black; -fx-border-width: 2px;"
+	xmlns="http://javafx.com/javafx/8.0.171"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="Nhanvien.ThemNVController">
+	<children>
+		<Label layoutX="256.0" layoutY="144.0" prefHeight="27.0"
+			prefWidth="96.0" text="Họ và tên  ">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Label>
+		<Label layoutX="256.0" layoutY="197.0" prefHeight="27.0"
+			prefWidth="81.0" text="Ngày sinh">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Label>
+		<Label layoutX="256.0" layoutY="254.0" prefHeight="27.0"
+			prefWidth="74.0" text="Chức vụ ">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Label>
+		<Label layoutX="256.0" layoutY="362.0" prefHeight="27.0"
+			prefWidth="117.0" text="SĐT">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Label>
+		<TextField fx:id="tfhovaten" layoutX="371.0" layoutY="144.0"
+			prefHeight="27.0" prefWidth="232.0" />
+		<TextField fx:id="tfsdt" layoutX="371.0" layoutY="363.0"
+			prefHeight="27.0" prefWidth="232.0" />
+		<ComboBox fx:id="tfcv" layoutX="371.0" layoutY="254.0"
+			prefHeight="27.0" prefWidth="232.0" />
+		<Label layoutX="256.0" layoutY="415.0" prefHeight="25.0"
+			prefWidth="60.0" text="CMND">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Label>
+		<TextField fx:id="tfcmnd" layoutX="371.0" layoutY="415.0"
+			prefHeight="27.0" prefWidth="232.0" />
+		<Label layoutX="256.0" layoutY="468.0" prefHeight="25.0"
+			prefWidth="60.0" text="Địa chỉ ">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Label>
+		<TextField fx:id="tfdc" layoutX="371.0" layoutY="469.0"
+			prefHeight="4.0" prefWidth="469.0" />
+		<ImageView fx:id="imgview" fitHeight="169.0"
+			fitWidth="197.0" layoutX="17.0" layoutY="212.0" pickOnBounds="true"
+			preserveRatio="true" />
+		<Button fx:id="addImage" layoutX="57.0" layoutY="393.0"
+			mnemonicParsing="false" onAction="#AddImage"
+			text="Thêm ảnh đại diện " />
+		<Label layoutX="457.0" layoutY="34.0" prefHeight="45.0"
+			prefWidth="285.0" text="THÊM NHÂN VIÊN " textFill="#da3030">
+			<font>
+				<Font name="System Bold Italic" size="30.0" />
+			</font>
+		</Label>
+		<Label layoutX="256.0" layoutY="313.0" prefHeight="27.0"
+			prefWidth="81.0" text="Giới tính ">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Label>
+		<ComboBox fx:id="tfgt" layoutX="371.0" layoutY="309.0"
+			prefHeight="25.0" prefWidth="232.0" />
+		<DatePicker fx:id="tfns" editable="false" layoutX="371.0" layoutY="197.0"
+			prefHeight="27.0" prefWidth="232.0" />
+		<Button fx:id="add" layoutX="422.0" layoutY="594.0"
+			mnemonicParsing="false" onAction="#ThemNVButton" prefHeight="27.0"
+			prefWidth="118.0" text="THÊM ">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Button>
+		<Button fx:id="huy" layoutX="597.0" layoutY="593.0"
+			mnemonicParsing="false" onAction="#HuyThemNV" prefHeight="40.0"
+			prefWidth="100.0" text="HỦY">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Button>
+		<Label layoutX="256.0" layoutY="522.0" prefHeight="27.0"
+			prefWidth="110.0" text="Ngày vào làm">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Label>
+		<DatePicker fx:id="tfngayvaolam" editable="false" layoutX="371.0"
+			layoutY="522.0" prefHeight="27.0" prefWidth="250.0" />
+		<TextField fx:id="user" layoutX="886.0" layoutY="199.0"
+			prefHeight="27.0" prefWidth="176.0" />
+		<Label layoutX="695.0" layoutY="203.0" text="Tên tài khoản">
+			<font>
+				<Font name="System Bold Italic" size="18.0" />
+			</font>
+		</Label>
+		<Label layoutX="695.0" layoutY="253.0" text="Mật khẩu">
+			<font>
+				<Font name="System Bold Italic" size="18.0" />
+			</font>
+		</Label>
+		<Label layoutX="822.0" layoutY="157.0"
+			text="Tạo tài khoản nhân viên">
+			<font>
+				<Font name="System Bold Italic" size="18.0" />
+			</font>
+		</Label>
+		<PasswordField layoutX="886.0" layoutY="313.0"
+			prefHeight="27.0" prefWidth="176.0" fx:id="xacnhanpass" />
+		<Label layoutX="697.0" layoutY="321.0" prefHeight="25.0"
+			prefWidth="176.0" text="Xác nhận mật khẩu">
+			<font>
+				<Font name="System Bold Italic" size="18.0" />
+			</font>
+		</Label>
+		<PasswordField fx:id="pass" layoutX="886.0"
+			layoutY="255.0" prefHeight="27.0" prefWidth="176.0" />
+		<Label fx:id="thongbao" layoutX="826.0" layoutY="363.0"
+			prefHeight="27.0" prefWidth="250.0" textFill="#e40e0e">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Label>
+		<Label fx:id="check_hoten" layoutX="376.0" layoutY="176.0"
+			prefHeight="13.0" prefWidth="224.0" style="-fx-font: red;"
+			textFill="RED">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Label>
+		<Label fx:id="check_ngaysinh" layoutX="369.0" layoutY="226.0"
+			prefHeight="20.0" prefWidth="224.0" style="-fx-font: red;"
+			textFill="RED">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Label>
+		<Label fx:id="check_chucvu" layoutX="369.0" layoutY="288.0"
+			prefHeight="12.0" prefWidth="224.0" style="-fx-font: red;"
+			textFill="RED">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Label>
+		<Label fx:id="check_gioitinh" layoutX="369.0" layoutY="340.0"
+			prefHeight="20.0" prefWidth="224.0" style="-fx-font: red;"
+			textFill="RED">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Label>
+		<Label fx:id="check_sdt" layoutX="369.0" layoutY="395.0"
+			prefHeight="13.0" prefWidth="224.0" style="-fx-font: red;"
+			textFill="RED">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Label>
+		<Label fx:id="check_cmnd" layoutX="369.0" layoutY="448.0"
+			prefHeight="20.0" prefWidth="224.0" style="-fx-font: red;"
+			textFill="RED">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Label>
+		<Label fx:id="check_diachi" layoutX="369.0" layoutY="502.0"
+			prefHeight="13.0" prefWidth="224.0" style="-fx-font: red;"
+			textFill="RED">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Label>
+		<Label fx:id="check_ngayvaolam" layoutX="369.0" layoutY="562.0"
+			prefHeight="25.0" prefWidth="232.0" textFill="RED">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Label>
+		<Label fx:id="check_anhdaidien" layoutX="13.0" layoutY="435.0"
+			prefHeight="27.0" prefWidth="206.0" textFill="RED">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Label>
+		<Label fx:id="check_taikhoan" layoutX="886.0" layoutY="228.0"
+			prefHeight="20.0" prefWidth="162.0" textFill="RED" />
+		<Label fx:id="check_matkhau" layoutX="886.0" layoutY="290.0"
+			prefHeight="13.0" prefWidth="176.0" textFill="RED" />
+		<Label fx:id="check_xacnhanmk" layoutX="886.0" layoutY="352.0"
+			prefHeight="20.0" prefWidth="176.0" textFill="RED" />
+		<Line endX="975.0" layoutX="116.0" layoutY="99.0" startX="-115.0" />
+		<Line endX="-38.5" endY="48.5" layoutX="208.0" layoutY="50.0"
+			startX="-38.5" startY="-50.0" />
+		<ImageView fitHeight="84.0" fitWidth="118.0" layoutX="41.0"
+			layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../Nhacungcap/backgroundSGU.png" />
+			</image>
+		</ImageView>
+		<ImageView fx:id="exit" fitHeight="45.0" fitWidth="44.0"
+			layoutX="1026.0" layoutY="27.0" onMouseClicked="#exit"
+			pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../QLBH/close.png" />
+			</image>
+		</ImageView>
+	</children>
+</AnchorPane>

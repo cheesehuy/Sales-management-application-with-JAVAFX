@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="1040.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="QLBH.ThemNVController">
+   <children>
+      <Label layoutX="219.0" layoutY="89.0" prefHeight="27.0" prefWidth="96.0" text="Họ và tên  ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="219.0" layoutY="140.0" prefHeight="27.0" prefWidth="96.0" text="Ngày sinh">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="219.0" layoutY="187.0" prefHeight="27.0" prefWidth="96.0" text="Chức vụ ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="219.0" layoutY="269.0" prefHeight="27.0" prefWidth="126.0" text="Số điện thoại  ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfhovaten" layoutX="333.0" layoutY="89.0" prefHeight="40.0" prefWidth="232.0" />
+      <TextField fx:id="tfsdt" layoutX="333.0" layoutY="270.0" prefHeight="25.0" prefWidth="232.0" />
+      <ComboBox fx:id="tfcv" layoutX="332.0" layoutY="186.0" prefHeight="27.0" prefWidth="232.0" />
+      <Label layoutX="219.0" layoutY="315.0" prefHeight="22.0" prefWidth="96.0" text="CMND">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfcmnd" layoutX="331.0" layoutY="315.0" prefHeight="27.0" prefWidth="232.0" />
+      <Label layoutX="219.0" layoutY="363.0" prefHeight="22.0" prefWidth="96.0" text="Địa chỉ ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfdc" layoutX="332.0" layoutY="357.0" prefHeight="40.0" prefWidth="232.0" />
+      <ImageView fx:id="imgview" fitHeight="169.0" fitWidth="176.0" layoutX="27.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="addImage" layoutX="56.0" layoutY="303.0" mnemonicParsing="false" onAction="#AddImage" text="Thêm ảnh đại diện " />
+      <Label layoutX="203.0" layoutY="19.0" prefHeight="40.0" prefWidth="224.0" text="THÊM NHÂN  VIÊN ">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="219.0" layoutY="231.0" prefHeight="27.0" prefWidth="96.0" text="Giới tính ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="tfgt" layoutX="333.0" layoutY="231.0" prefHeight="27.0" prefWidth="232.0" />
+      <DatePicker fx:id="tfns" layoutX="331.0" layoutY="141.0" prefHeight="27.0" prefWidth="232.0" />
+    <Button fx:id="add" layoutX="214.0" layoutY="485.0" mnemonicParsing="false" onAction="#ThemNVButton" prefHeight="25.0" prefWidth="101.0" text="Thêm " />
+      <Button fx:id="huy" layoutX="345.0" layoutY="484.0" mnemonicParsing="false" onAction="#HuyThemNV" prefHeight="27.0" prefWidth="67.0" text="Hủy" />
+      <Label layoutX="219.0" layoutY="415.0" prefHeight="27.0" prefWidth="110.0" text="Ngày vào làm">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="tfngayvaolam" layoutX="337.0" layoutY="415.0" prefHeight="27.0" prefWidth="240.0" />
+      <TextField fx:id="user" layoutX="743.0" layoutY="219.0" prefHeight="27.0" prefWidth="176.0" />
+      <Label layoutX="607.0" layoutY="218.0" text="tài khoản">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="607.0" layoutY="269.0" text="mật khẩu">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="726.0" layoutY="159.0" text="Tạo tài khoản nhân viên">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <PasswordField layoutX="743.0" layoutY="315.0" prefHeight="27.0" prefWidth="176.0" fx:id="xacnhanpass" />
+      <Label layoutX="607.0" layoutY="315.0" prefHeight="27.0" prefWidth="110.0" text="xác nhận mk">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="pass" layoutX="743.0" layoutY="270.0" prefHeight="27.0" prefWidth="176.0" />
+      <Label fx:id="thongbao" layoutX="765.0" layoutY="365.0" prefHeight="25.0" prefWidth="146.0" />
+   </children>
+</AnchorPane>

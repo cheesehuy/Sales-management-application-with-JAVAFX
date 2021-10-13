@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="653.0" prefWidth="712.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DanhMuc.DathangDetailController">
+   <children>
+      <Label layoutX="266.0" layoutY="30.0" text="CHI TIẾT ĐẶT HÀNG">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="57.0" text="Mã đặt hàng ">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <Label layoutX="33.0" layoutY="98.0" text="Thời gian đặt">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <Label layoutX="64.0" layoutY="438.0" text="Tổng tiền">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <Label fx:id="lbMadathang" layoutX="179.0" layoutY="57.0" text="Mã đặt hàng">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="lbThoigiandat" layoutX="178.0" layoutY="98.0" text="Thời gian đặt">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="lbTongtien" layoutX="497.0" layoutY="438.0" text="Tổng tiền">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="33.0" layoutY="136.0" text="Tên nhà cung cấp">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <Label layoutX="30.0" layoutY="178.0" text="Tên nhân viên">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <Label fx:id="lbMancc" layoutX="188.0" layoutY="136.0" text="Mã ncc">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="lbManv" layoutX="178.0" layoutY="183.0" text="Mã nv">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+     <Button fx:id="back1" layoutX="317.0" layoutY="614.0" mnemonicParsing="false" onAction="#trolai" text="Trở lại" />
+      <TableView fx:id="tbChitietDatHang" layoutX="62.0" layoutY="237.0" prefHeight="194.0" prefWidth="630.0">
+        <columns>
+          <TableColumn fx:id="tenhang" prefWidth="212.0" text="Tên sản phẩm " />
+          <TableColumn fx:id="soluong" prefWidth="62.0" text="Số Lượng" />
+            <TableColumn fx:id="dongia" prefWidth="184.0" text="Đơn giá" />
+            <TableColumn fx:id="tongtien" prefWidth="171.0" text="Tổng tiền" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

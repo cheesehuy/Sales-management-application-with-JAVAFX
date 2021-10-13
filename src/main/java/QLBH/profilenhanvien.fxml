@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0"
+	prefWidth="755.0"
+	style="-fx-background-color: #33f1ff; -fx-border-color: black; -fx-border-width: 3px;"
+	xmlns="http://javafx.com/javafx/11.0.1"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="QLBH.ProfilesNhanvienController">
+	<children>
+		<Label layoutX="20.0" layoutY="120.0" prefHeight="35.0"
+			prefWidth="139.0" text="Họ và tên : ">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Label>
+		<Label layoutX="161.0" layoutY="56.0" prefHeight="33.0"
+			prefWidth="293.0" text="THÔNG TIN NHÂN VIÊN">
+			<font>
+				<Font name="System Bold Italic" size="24.0" />
+			</font>
+		</Label>
+		<Text fx:id="hovatennv" layoutX="138.0" layoutY="145.0"
+			strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="320.13671875">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+		<Label layoutX="20.0" layoutY="170.0" prefHeight="35.0"
+			prefWidth="129.0" text="Năm sinh : ">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Label>
+		<Label layoutX="20.0" layoutY="220.0" text="Chức vụ :">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Label>
+		<Label layoutX="20.0" layoutY="270.0" text="Giới tính :">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Label>
+		<Label layoutX="20.0" layoutY="320.0" text="SĐT :">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Label>
+		<Label layoutX="20.0" layoutY="370.0" prefHeight="32.0"
+			prefWidth="85.0" text="CMND :">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Label>
+		<Label layoutX="20.0" layoutY="420.0" text="Địa chỉ :">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Label>
+		<Text fx:id="chucvunhanvien" layoutX="138.0" layoutY="243.0"
+			strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="320.13671875">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+		<Text fx:id="gioitinhnhanvien" layoutX="133.0" layoutY="293.0"
+			strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="320.13671875">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+		<Text fx:id="sdtnhanvien" layoutX="133.0" layoutY="343.0"
+			strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="320.13671875">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+		<Text fx:id="cmndnhanvien" layoutX="138.0" layoutY="394.0"
+			strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="320.13671875">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+		<Text fx:id="diachinhanvien" layoutX="133.0" layoutY="443.0"
+			strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="320.13671875">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+		<ImageView fx:id="imagenhanvien" fitHeight="166.0"
+			fitWidth="174.0" layoutX="567.0" layoutY="134.0" pickOnBounds="true"
+			preserveRatio="true" />
+		<Label layoutX="579.0" layoutY="317.0" text="Ảnh nhân viên">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Label>
+		<Label layoutX="20.0" layoutY="470.0" prefHeight="32.0"
+			prefWidth="147.0" text="Ngày vào làm :">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Label>
+		<ImageView fx:id="exit" fitHeight="35.0" fitWidth="43.0"
+			layoutX="706.0" layoutY="14.0" onMouseClicked="#exit"
+			pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@close.png" />
+			</image>
+		</ImageView>
+		<Text fx:id="ngaysinhnhanvien" layoutX="138.0" layoutY="195.0"
+			strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="320.13671875">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+		<Text fx:id="ngayvaolam" layoutX="147.0" layoutY="494.0"
+			strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="320.13671875">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+	</children>
+</AnchorPane>

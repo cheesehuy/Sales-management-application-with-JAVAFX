@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="QLBH.LapPhieuDatHangController">
+   <children>
+      <AnchorPane layoutX="34.0" layoutY="1.0" prefHeight="689.0" prefWidth="936.0">
+         <children>
+            <TableView fx:id="tableSP" layoutX="-26.0" layoutY="329.0" prefHeight="266.0" prefWidth="405.0">
+               <columns>
+                  <TableColumn fx:id="tensanpham" prefWidth="97.0" text="Tên sản phẩm" />
+                  <TableColumn fx:id="masanpham" minWidth="0.0" prefWidth="83.0" text="Mã sản phẩm" />
+                  <TableColumn fx:id="donvi" prefWidth="51.0" text="Đơn vị" />
+                  <TableColumn fx:id="donvitinh" minWidth="0.0" prefWidth="81.0" text="Số lượng" />
+                  <TableColumn fx:id="giatien" minWidth="0.0" prefWidth="91.0" text="Giá tiền" />
+                  <TableColumn fx:id="loaisanpham" minWidth="0.0" prefWidth="0.0" text="Loại sản phẩm" />
+               </columns>
+            </TableView>
+            <TextField layoutX="119.0" layoutY="160.0" prefHeight="27.0" prefWidth="235.0" text="75 đường 14 phường Bình An Quận 2 " />
+            <Text layoutX="11.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nhà cung cấp" wrappingWidth="80.341796875" />
+            <Text layoutX="11.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Địa chỉ" wrappingWidth="46.953125" />
+            <Label layoutX="220.0" layoutY="38.0" prefHeight="27.0" prefWidth="184.0" text="LẬP PHIẾU ĐẶT HÀNG">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cbnhacungcap" layoutX="125.0" layoutY="121.0" prefHeight="25.0" prefWidth="235.0" />
+            <Button fx:id="idDatHang" layoutX="682.0" layoutY="318.0" mnemonicParsing="false" onAction="#DatHang" prefHeight="27.0" prefWidth="58.0" text="Đặt " />
+            <Button fx:id="huy" layoutX="773.0" layoutY="318.0" mnemonicParsing="false" onAction="#CanCel" prefHeight="27.0" prefWidth="58.0" text="Hủy" />
+            <Text layoutX="11.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thanh toán" wrappingWidth="86.953125" />
+            <ComboBox layoutX="119.0" layoutY="205.0" prefHeight="25.0" prefWidth="235.0" />
+            <TableView fx:id="tableSP1" layoutX="396.0" layoutY="355.0" prefHeight="278.0" prefWidth="538.0">
+               <columns>
+                  <TableColumn fx:id="tensanpham1" prefWidth="89.0" text="Tên sản phẩm" />
+                  <TableColumn fx:id="masanpham1" minWidth="0.0" prefWidth="83.0" text="Mã sản phẩm" />
+                  <TableColumn fx:id="donvi1" prefWidth="47.0" text="Đơn vị" />
+                  <TableColumn fx:id="donvitinh1" minWidth="0.0" prefWidth="63.0" text="Số lượng" />
+                  <TableColumn fx:id="giatien1" minWidth="0.0" prefWidth="66.0" text="Giá tiền" />
+                  <TableColumn fx:id="loaisanpham1" minWidth="0.0" prefWidth="56.0" text="Loại" />
+                  <TableColumn fx:id="thanhtien" minWidth="0.0" prefWidth="71.0" text="Thành tiền" />
+                  <TableColumn minWidth="0.0" prefWidth="90.0" fx:id="xoaSP" />
+               </columns>
+            </TableView>
+            <TextField fx:id="tf1" layoutX="682.0" layoutY="69.0" />
+            <TextField fx:id="tf2" layoutX="682.0" layoutY="109.0" />
+            <TextField fx:id="tf3" layoutX="682.0" layoutY="145.0" />
+            <TextField fx:id="tf4" layoutX="682.0" layoutY="214.0" />
+            <Text layoutX="591.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tên sản phẩm" />
+            <Text layoutX="593.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mã sản phẩm" />
+            <Text layoutX="595.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Đơn vị" />
+            <Text layoutX="595.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số lượng" />
+            <TextField fx:id="tf5" layoutX="682.0" layoutY="251.0" />
+            <Text layoutX="595.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Giá " />
+            <Text layoutX="595.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Loại" />
+            <TextField fx:id="tf6" layoutX="682.0" layoutY="176.0" />
+            <TextField fx:id="Timkiem" layoutX="-26.0" layoutY="304.0" prefHeight="25.0" prefWidth="405.0" />
+            <TextField fx:id="tf7" layoutX="682.0" layoutY="284.0" />
+            <Text layoutX="595.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thành tiền" />
+            <TextField fx:id="tftongtien" layoutX="467.0" layoutY="633.0" prefHeight="25.0" prefWidth="467.0" />
+            <Text layoutX="396.0" layoutY="650.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tổng tiền" />
+            <Button layoutX="656.0" layoutY="663.0" mnemonicParsing="false" onAction="#xacnhan" text="Xác nhận" />
+            <Text layoutX="842.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VNĐ" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

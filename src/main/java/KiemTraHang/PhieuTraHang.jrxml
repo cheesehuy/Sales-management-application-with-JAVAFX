@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PhieuTraHang" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="596ad350-83d0-4890-a43c-5c38295591bb">
+	<parameter name="maphieutra" class="java.lang.String"/>
+	<parameter name="tongtien" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="thoigian" class="java.lang.String"/>
+	<field name="tenncc" class="java.lang.String"/>
+	<field name="tensanpham" class="java.lang.String"/>
+	<field name="loaisanpham" class="java.lang.String"/>
+	<field name="soluong" class="java.lang.String"/>
+	<field name="thanhtien" class="java.lang.String"/>
+	<field name="lydo" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="43" splitType="Stretch">
+			<staticText>
+				<reportElement x="130" y="0" width="300" height="40" uuid="b5ffe2db-32e8-472e-84b6-43ee451eff10"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[CỬA HÀNG TIỆN LỢI SGU]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="45" splitType="Stretch">
+			<staticText>
+				<reportElement x="130" y="3" width="230" height="38" uuid="c8766939-0d20-4acb-83b0-0a7d43755b56"/>
+				<textElement>
+					<font size="26"/>
+				</textElement>
+				<text><![CDATA[PHIẾU TRẢ HÀNG]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="131" splitType="Stretch">
+			<staticText>
+				<reportElement x="-20" y="0" width="160" height="30" uuid="2d6eabf4-b488-4afb-a715-db3fc1f986f4"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Mã phiếu trả hàng :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-20" y="46" width="130" height="30" uuid="3fc4fc7a-b05f-4bd8-88d9-143812fc520d"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Nhà cung cấp : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="0" width="90" height="30" uuid="823dff43-b39c-4820-8d6e-0a367aa5fdaf"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[thời gian :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-10" y="100" width="120" height="30" uuid="3171288a-fc63-45d5-b94b-8d08a160a397"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Tên sản phẩm]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="100" width="120" height="30" uuid="2278922d-5426-40c9-8da5-09d99a0d55e9"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Loại sản phẩm]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="252" y="100" width="50" height="30" uuid="489a94dd-7429-4f46-bbe1-b5e8b9f4d7c1"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[SL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="100" width="90" height="30" uuid="da26a7f4-b5fb-4eb6-85df-4f6ca17bbc00"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Thành tiền]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="140" y="0" width="100" height="30" uuid="faae4205-5b37-42c5-b844-673911730242"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{maphieutra}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="0" width="100" height="30" uuid="f1e24d02-42fa-4df9-b4d6-8aa1753e1ec0"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{thoigian}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="46" width="100" height="30" uuid="f1056747-b5af-48a4-8507-713c227d185a"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tenncc}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="34" splitType="Stretch">
+			<textField>
+				<reportElement x="-11" y="0" width="100" height="30" uuid="7147ae1d-908a-4c51-8668-d247bcf20a2f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d4b488da-07a8-404e-88e6-421bca896c22"/>
+				</reportElement>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tensanpham}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="0" width="120" height="30" uuid="9b338f13-144b-4065-b673-9f8bf4eb4d96">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="60ca101f-da25-412e-98fe-49685a681a96"/>
+				</reportElement>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{loaisanpham}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="0" width="60" height="30" uuid="154a2567-ca58-4f7e-8b11-207d3476890e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1dd1addb-6f35-4c05-817e-8d0f3df34402"/>
+				</reportElement>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{soluong}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="0" width="100" height="30" uuid="f2dfe467-322c-4d1f-99b6-2f1d48e7d0d4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="597814f2-9d18-4b9f-a4fb-f82a16621f28"/>
+				</reportElement>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{thanhtien}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="280" y="31" width="100" height="30" uuid="ea712fcb-1255-4a9d-b481-134999acd922"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Tổng tiền]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="380" y="30" width="100" height="30" uuid="0bacaf8d-bf85-4fde-b7ad-57346b28df60"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tongtien}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-20" y="1" width="100" height="30" uuid="4d916706-e740-4c85-bff9-d5b72361c10a"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Lý do]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="89" y="0" width="100" height="30" uuid="0dd3cf3e-1c97-4c43-8b88-0f6e3173fb42">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="01db8016-fdda-46ee-bc0f-45607b9f5f18"/>
+				</reportElement>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lydo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

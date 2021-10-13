@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="ap" maxHeight="-Infinity"
+	maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+	prefHeight="411.0" prefWidth="505.0"
+	style="-fx-background-color: #66CCFF; -fx-border-color: black; -fx-border-width: 2px;"
+	xmlns="http://javafx.com/javafx/11.0.1"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="QLKho.ThemSanPhamController">
+	<children>
+		<TextField fx:id="tensanpham" layoutX="280.0" layoutY="99.0"
+			prefHeight="27.0" prefWidth="188.0" />
+		<TextField fx:id="soluong" layoutX="280.0" layoutY="186.0"
+			prefHeight="25.0" prefWidth="189.0" />
+		<TextField fx:id="giatien" layoutX="280.0" layoutY="233.0"
+			prefHeight="25.0" prefWidth="189.0" />
+		<Text layoutX="165.0" layoutY="117.0" strokeType="OUTSIDE"
+			strokeWidth="0.0" text="Tên sản phẩm" />
+		<Text layoutX="165.0" layoutY="160.0" strokeType="OUTSIDE"
+			strokeWidth="0.0" text="Đơn vị" />
+		<Text layoutX="164.0" layoutY="203.0" strokeType="OUTSIDE"
+			strokeWidth="0.0" text="Số lượng" />
+		<Text layoutX="167.0" layoutY="250.0" strokeType="OUTSIDE"
+			strokeWidth="0.0" text="Giá tiền" />
+		<Label layoutX="168.0" layoutY="289.0" text="Loại sản phẩm" />
+		<Label layoutX="220.0" layoutY="58.0" prefHeight="29.0"
+			prefWidth="216.0" text="THÊM SẢN PHẨM ">
+			<font>
+				<Font size="24.0" />
+			</font>
+		</Label>
+		<ImageView fx:id="imageSP" fitHeight="162.0"
+			fitWidth="129.0" layoutX="15.0" layoutY="83.0" pickOnBounds="true"
+			preserveRatio="true" />
+		<Button fx:id="themanhsp" layoutX="32.0" layoutY="273.0"
+			mnemonicParsing="false" onAction="#ThemAnhSP" text="Thêm ảnh" />
+		<Button fx:id="luusp" layoutX="188.0" layoutY="342.0"
+			mnemonicParsing="false" onAction="#LuuSP" text="Lưu" />
+		<Button fx:id="huySP" layoutX="271.0" layoutY="342.0"
+			mnemonicParsing="false" onAction="#huySP" text="Hủy" />
+		<ComboBox fx:id="donvi" layoutX="280.0" layoutY="143.0"
+			prefHeight="25.0" prefWidth="189.0" />
+		<ComboBox fx:id="loaisanpham" layoutX="280.0" layoutY="285.0"
+			prefHeight="25.0" prefWidth="189.0" />
+		<Label fx:id="thongbao" layoutX="280.0" layoutY="126.0"
+			prefHeight="17.0" prefWidth="216.0" textFill="#ff0009" />
+		<Label fx:id="thongbao1" layoutX="280.0" layoutY="168.0"
+			prefHeight="17.0" prefWidth="188.0" textFill="RED" />
+		<Label fx:id="thongbao2" layoutX="280.0" layoutY="211.0"
+			prefHeight="17.0" prefWidth="188.0" textFill="#f80000" />
+		<Label fx:id="thongbao3" layoutX="280.0" layoutY="258.0"
+			prefHeight="17.0" prefWidth="188.0" textFill="RED" />
+		<Label fx:id="thongbao4" layoutX="280.0" layoutY="310.0"
+			prefHeight="17.0" prefWidth="188.0" textFill="RED" />
+		<Label fx:id="thongbao5" layoutX="9.0" layoutY="245.0"
+			prefHeight="17.0" prefWidth="114.0" textFill="RED" />
+		<ImageView fx:id="exit" fitHeight="27.0" fitWidth="34.0"
+			layoutX="468.0" layoutY="14.0" onMouseClicked="#exit"
+			pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../QLBH/close.png" />
+			</image>
+		</ImageView>
+	</children>
+</AnchorPane>

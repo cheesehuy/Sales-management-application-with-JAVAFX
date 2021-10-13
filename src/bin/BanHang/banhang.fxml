@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="ap" minHeight="0.0" minWidth="0.0" prefHeight="850.0" prefWidth="1305.0" styleClass="background" stylesheets="@../Nhacungcap/nhacungcap.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BanHang.BanHangController">
+   <children>
+      <TableView fx:id="TableSP" layoutX="20.0" layoutY="377.0" prefHeight="456.0" prefWidth="768.0">
+         <columns>
+            <TableColumn fx:id="tensanpham" prefWidth="133.0" text="Tên sản phẩm" />
+            <TableColumn fx:id="loaisanpham" prefWidth="162.0" text="Loại" />
+            <TableColumn fx:id="giatien" prefWidth="192.0" text="Đơn giá" />
+            <TableColumn fx:id="hinhanhsanpham" prefWidth="292.0" text="Hình ảnh " />
+         </columns>
+      </TableView>
+      <AnchorPane layoutX="796.0" layoutY="89.0" prefHeight="733.0" prefWidth="496.0" style="-fx-background-color: transparent;">
+         <children>
+            <Text fill="#ff3e25" fontSmoothingType="LCD" layoutX="132.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HÓA ĐƠN" wrappingWidth="232.8876953125">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Text>
+            <Label layoutX="35.0" layoutY="340.0" text="Tổng tiền" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="554.0" text="Tiền thừa" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="416.0" text="Khách trả" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tongtien" layoutX="149.0" layoutY="340.0" prefHeight="27.0" prefWidth="159.0" editable="false" />
+            <TextField fx:id="khachtra" layoutX="149.0" layoutY="416.0" prefHeight="27.0" prefWidth="159.0" editable="false"/>
+            <TextField fx:id="tienthua" layoutX="149.0" layoutY="555.0" prefHeight="25.0" prefWidth="159.0" editable="false"/>
+            <Button fx:id="thanhtoan" layoutX="149.0" layoutY="653.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="230.0" text="Thanh toán" textFill="#225abf">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <effect>
+                  <Blend />
+               </effect>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="thongbao" layoutX="128.0" layoutY="152.0" prefHeight="17.0" prefWidth="160.0" textFill="#f8f8f8" />
+            <Label layoutX="35.0" layoutY="263.0" text="Khách hàng" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="278.0" layoutY="263.0" text="Tích lũy" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="482.0" text="Giảm giá(%)" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="giamgia" layoutX="149.0" layoutY="483.0" prefHeight="25.0" prefWidth="159.0" />
+            <Button fx:id="timkhachhang" layoutX="437.0" layoutY="258.0" mnemonicParsing="false" onAction="#timkhachhang" prefHeight="37.0" prefWidth="47.0" text="Tìm" />
+            <ImageView fitHeight="44.0" fitWidth="47.0" layoutX="90.0" layoutY="205.0" onMousePressed="#imageClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../QLBH/iconkhachhang.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="chinhsachkhuyenmai" layoutX="31.0" layoutY="203.0" mnemonicParsing="false" onAction="#chinhsachkhuyenmai" prefHeight="38.0" prefWidth="47.0" />
+            <Label fx:id="diemtichluy" layoutX="357.0" layoutY="268.0" prefHeight="17.0" prefWidth="61.0" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="khachhangg" layoutX="149.0" layoutY="268.0" prefHeight="25.0" prefWidth="118.0" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="44.0" fitWidth="38.0" layoutX="35.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Nhacungcap/iconsale.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="thongbaokhachhang" layoutX="41.0" layoutY="295.0" prefHeight="25.0" prefWidth="300.0" textFill="RED">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="thongbaokhachtra" layoutX="35.0" layoutY="453.0" prefHeight="17.0" prefWidth="330.0" textFill="RED">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="437.0" layoutY="212.0" mnemonicParsing="false" onAction="#xoakh" prefHeight="37.0" prefWidth="47.0" text="XOA" fx:id="xoakh" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="hoadon" layoutX="21.0" layoutY="87.0" prefHeight="228.0" prefWidth="768.0">
+         <columns>
+            <TableColumn fx:id="masanpham1" prefWidth="75.0" text="Id" />
+            <TableColumn fx:id="tensanpham1" prefWidth="101.0" text="Tên sản phẩm" />
+            <TableColumn fx:id="loaisanpham1" prefWidth="109.0" text="Loại" />
+            <TableColumn fx:id="donvitnh1" prefWidth="75.0" text="Số lượng " />
+            <TableColumn fx:id="giatien1" prefWidth="110.0" text="Đơn giá" />
+            <TableColumn fx:id="donvi1" prefWidth="101.0" text="Đơn vị" />
+            <TableColumn fx:id="thanhtien" prefWidth="90.0" text="Thành tiền" />
+            <TableColumn prefWidth="97.0" fx:id="xoaSP" />
+         </columns>
+      </TableView>
+      <TextField fx:id="Timkiem" layoutX="221.0" layoutY="341.0" prefHeight="25.0" prefWidth="195.0" />
+      <Label layoutX="21.0" layoutY="338.0" text="Tìm kiếm sản phẩm" textFill="#fffefe">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Line endX="14.0" endY="771.0" layoutX="781.0" layoutY="61.0" startX="14.0" startY="18.0" stroke="WHITE" />
+      <Label fx:id="thongbaosanpham" layoutX="28.0" layoutY="51.0" prefHeight="25.0" prefWidth="525.0" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
